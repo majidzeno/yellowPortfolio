@@ -1,0 +1,45 @@
+
+.yell{
+	background-color: black;
+	/* color:$yell; */
+	min-height: 100vh;
+	font-family: mainFont;
+}
+.yell-header{
+	background-color: transparent;
+	/* border:2px solid blue; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	opacity: .5;
+	z-index: 1;
+	margin-bottom: -8%;
+	&__item {
+		/* border:2px solid red; */
+		padding:2em;
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		a{
+			color:#fdc601;
+			text-decoration: none;
+		    letter-spacing: 2px;
+		}
+	}
+}
+@media(max-width:500px){
+	.yell-header{
+	    flex-direction: column;
+	    padding-bottom: 2em;
+	    position: absolute;
+	    background-color: black;
+	    z-index: 10;
+	    width: 100vw;
+	    top: 0;
+	    left: 0;
+	}
+}

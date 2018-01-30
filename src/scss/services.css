@@ -1,0 +1,8 @@
+.services {
+  position: relative; }
+  .services .banner {
+    background-image: url("./scss/imgs/aboutme.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
