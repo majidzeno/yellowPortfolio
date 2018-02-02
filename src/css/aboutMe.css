@@ -1,0 +1,3 @@
+@media (max-width: 500px) {
+  .banner, .services, .aboutMe {
+    display: none; } }

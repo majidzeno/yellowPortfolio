@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("./scss/imgs/banner.jpg");
+  background-image: url("../scss/imgs/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
