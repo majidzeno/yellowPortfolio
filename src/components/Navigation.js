@@ -5,6 +5,7 @@ import projectsLogo from '../scss/svgs/project.svg';
 import codepenLogo from '../scss/svgs/codepen.svg';
 import educationLogo from '../scss/svgs/education.svg';
 import contactsLogo from '../scss/svgs/contact.svg';
+import { Link } from 'react-router-dom';
 
 function Navigation (){
 	return (
@@ -15,19 +16,20 @@ function Navigation (){
 				<div className="yell-navigation__item">
 					<a href="" className="is-active">
 						<img className="yell-navigation__itemLogo" src={homeLogo}  alt="Home"/>
-						<p>Intro</p>
+						<Link to="/">Home</Link>
 					</a>
 				</div>
 				<div className="yell-navigation__item">
 					<a href="" className="">
 						<img className="yell-navigation__itemLogo" src={resumeLogo}  alt="reusme"/>
-						<p>Résumé</p>
+						<Link to="/landingpage">LandingPage</Link>
 					</a>
 				</div>
 				<div className="yell-navigation__item">
 					<a href="" className="">
 						<img className="yell-navigation__itemLogo" src={projectsLogo}  alt="Home"/>
-						<p>Projects</p>
+						// <p>Projects</p>
+						<Link to="/services">Services</Link>
 					</a>
 				</div>
 				<div className="yell-navigation__item">
@@ -39,7 +41,9 @@ function Navigation (){
 				<div className="yell-navigation__item">
 					<a href="" className="">
 						<img className="yell-navigation__itemLogo" src={educationLogo}  alt="Home"/>
-						<p>Education</p>
+						// <p>Education</p>
+						<Link to="/aboutme">AboutMe</Link>
+
 					</a>
 				</div>
 				<div className="yell-navigation__item">
@@ -50,11 +54,11 @@ function Navigation (){
 				</div>
 			</div>
 			<div className="yell-navigation__social">
-				<a href=""><i class="fa fa-facebook-f"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-google"></i></a>
-				<a href=""><i class="fa fa-wordpress"></i></a>				
-				<a href=""><i class="fa fa-github-alt"></i></a>
+				<a href=""><i className="fa fa-facebook-f"></i></a>
+				<a href=""><i className="fa fa-twitter"></i></a>
+				<a href=""><i className="fa fa-google"></i></a>
+				<a href=""><i className="fa fa-wordpress"></i></a>				
+				<a href=""><i className="fa fa-github-alt"></i></a>
 			</div>
         </div>
 	)

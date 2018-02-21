@@ -101,6 +101,13 @@
       .yell-navigation__social a:hover {
         color: #fa5401; }
 
+@media (max-width: 500px) {
+  .yell-navigation {
+    width: 0; }
+    .yell-navigation--open {
+      width: 80%;
+      transition: width 1s ease-in-out; } }
+
 /* @font-face{
 	font-family:'mainFont';
 	src: url('./fonts/Amaranth/Amaranth-Bold.ttf');

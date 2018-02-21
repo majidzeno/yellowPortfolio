@@ -97,5 +97,11 @@
 	}
 }
 @media(max-width:500px){
-
+	.yell-navigation{
+		width: 0;
+		&--open{
+			width: 80%;
+			transition: width 1s ease-in-out;
+		}
+	}
 }

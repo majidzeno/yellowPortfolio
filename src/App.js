@@ -15,4 +15,4 @@ class Yell extends Component {
   }
 }
 
-export default Yell;
+
